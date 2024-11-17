@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url(bg.jpg)">
+  <!-- Login Container -->
+  <div id="login-container">
+    <h2>Login to Meet <br>Elon Musk</h2>
+    <form id="login-form">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Content Container (visible after login) -->
+  <!-- Content Container (visible after login) -->
+  <div id="content-container" style="display: none;">
+    <!-- YouTube Video -->
+    <div class="video-container">
+     <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+  <iframe 
+    src="https://www.youtube.com/embed/5CFZZHF-zjA?rel=0&start=11&autoplay=1&playsinline=1" 
+    style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" 
+    allowfullscreen 
+    scrolling="no" 
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;">
+  </iframe>
+</div>
+    </div>
+
+<!-- Drop-down Survey Form -->
+<div class="survey-container">
+  <h3>Current Understanding Vibe?</h3>
+  <form id="survey-form">
+    <select id="study-method" required>
+      <option value="" disabled selected>Click here to select your option</option>
+      <option value="Normal">Normal</option>
+      <option value="Hyper">Hyper</option>
+      <option value="Much Angry">Much Angry</option>
+      <option value="Bit Doubt">Bit Doubt</option>
+      <option value="Sured About Us">Sure About Us</option>
+      <option value="Nothing Happened">Nothing Happened</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+    <!-- Comment Form -->
+    <div class="comment-container">
+      <h3>Comments</h3>
+      <form id="comment-form">
+        <textarea id="comment-text" placeholder="Write your comment here..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+<div style="text-align: center; margin-top: 20px;">
+  <a href="https://thetechsolvy.github.io/Data-Dash/" 
+     style="
+       display: inline-block; 
+       padding: 10px 20px; 
+       background-color: #0074d9; 
+       color: white; 
+       text-decoration: none; 
+       font-size: 16px; 
+       border-radius: 5px; 
+       border: none; 
+       text-align: center; 
+       cursor: pointer; 
+       transition: background-color 0.3s ease, transform 0.2s ease;
+     "
+     onmouseover="this.style.backgroundColor='#00509e'; this.style.transform='scale(1.05)';" 
+     onmouseout="this.style.backgroundColor='#0074d9'; this.style.transform='scale(1)';"
+  >
+    Dashboard
+  </a>
+</div>
+
+
+  </div>
+
+  <!-- Include your custom JavaScript as a module -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
